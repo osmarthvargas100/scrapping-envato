@@ -1,0 +1,8 @@
+<%- include('head.ejs') %> 
+  <h1>hola</h1>
+  <ul>
+    <% products.forEach(function(product) { %>
+      <li><%= product.title %></li>
+    <% }); %>
+  </ul>
+<%- include('footer.ejs') %> 
