@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+}
+.container {
+  max-width: 600px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+.img-logo {
+  width: 100px; /* Ancho de la imagen del logo */
+  height: auto; /* Altura de la imagen ajustada automáticamente */
+  margin-top: 20px; /* Margen superior */
+}
+
+.form-control {
+  flex: 1; /* Hacer que el campo de entrada de texto se expanda para llenar el espacio disponible */
+  border-radius: 0; /* Quitar los bordes redondeados */
+}
+
+.btn {
+  border-radius: 0; /* Quitar los bordes redondeados del botón */
+}
+
+.subirlo {
+  margin-top: 50px; /* Margen superior del contenedor del formulario */
+}
+
+/* Estilos para el botón de envío del formulario */
+.btn-success {
+  background-color: #4285F4;
+  color: #fff;
+}
+
+/* Estilos para el formulario de búsqueda */
+form {
+  display: flex;
+  width: 100%;
+}
+
+/* Estilos para el campo de entrada de texto del formulario */
+.input {
+  border: none;
+  border-bottom: 2px solid #4285F4;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.footer {
+  background-color: #547C64;
+  color: #FFFFFF;
+   /* Posición absoluta para que el footer esté siempre en la parte inferior */
+  bottom: 0; /* Alinear el footer en la parte inferior de la ventana del navegador */
+  left: 0; /* Alinear el footer a la izquierda */
+  right: 0; /* Alinear el footer a la derecha */
+}
+
+.texto {
+  color: #FFFFFF;
+}
+
+.img-fb,
+.img-twiter,
+.img-instagram {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.tamaño {
+  font-size: 12px;
+  background-color: #FFFFFF;
+  color: #000000;
+}

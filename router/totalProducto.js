@@ -17,6 +17,8 @@ router.get('/', async function(req, res) {
         // Asigna null o un valor vacío a 'data' si 'keyword' no está presente
         data = null;
     }
+    const result = await scrapeEnvato("trends");
+    console.log(result);
     // Redirige la solicitud a la ruta '/otraRuta' y pasa la data como parámetro en la URL
     res.render('totalProducto',{products: data});
 });

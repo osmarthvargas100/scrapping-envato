@@ -1,8 +1,35 @@
 <%- include('head.ejs') %> 
-  <h1>hola</h1>
-  <ul>
-    <% products.forEach(function(product) { %>
-      <li><%= product.title %></li>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+<main >
+  <h1>Tabla de Datos</h1>
+  <table>
+    <tr>
+      <th>Título</th>
+      <th>Autores</th>
+      <th>Descripciones</th>
+      <th>Imagen</th>
+    </tr>
+    <% products.forEach(function(item) { %>
+      <tr>
+        <td><%= item.title.join(', ') %></td>
+        <td><%= item.containerData.authors.join(', ') %></td>
+        <td><%= item.containerData.descriptions.join(', ') %></td>
+        <td><%= item.containerData.imagen.join(', ') %></td>
+      </tr>
     <% }); %>
-  </ul>
+  </table>
+</main>
 <%- include('footer.ejs') %> 

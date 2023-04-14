@@ -1,12 +1,14 @@
 <%- include('head.ejs') %> 
+
 <main class="container mx-auto">
-    <div class="d-flex flex-column align-items-center subirlo">
-      <img class="img" src="/img/logo.PNG" alt="Descripción de la imagen" />
-  
-      <form class="d-flex col-12" action="/totalProducto" method="get"> <!-- Define la acción y el método del formulario -->
-        <input class="form-control me-2 input" type="search" placeholder="Plantillas o Recursos..." aria-label="Buscar" id="keyword" name="keyword" required> <!-- Campo de entrada de texto con un id y un nombre -->
-        <button class="btn btn-success" type="submit">Buscar</button> <!-- Botón de envío del formulario -->
-      </form>
-    </div>
+  <div class="d-flex flex-column align-items-center subirlo">
+    <img class="img img-alternativa img-logo" src="/img/logo.PNG" alt="Descripción de la imagen" />
+
+    <form class="d-flex col-12" action="/totalProducto" method="get">
+      <input class="form-control me-2 input" type="search" placeholder="Plantillas o Recursos..." aria-label="Buscar" id="keyword" name="keyword" required>
+      <button class="btn btn-success" type="submit">Buscar</button>
+    </form>
+  </div>
 </main>
+
 <%- include('footer.ejs') %> 
