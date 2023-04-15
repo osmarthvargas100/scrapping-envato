@@ -33,7 +33,7 @@ async function scrapeEnvato(keyword) {
 
       let containerData = [];
       let lista;
-      if (i === 0) {
+      if (title === 'Fotos') {
          lista = document.querySelectorAll(
           `#app > div.Pwa91aRM > main > div > div.GsBXsKvH > div:nth-child(${
             i + 1
@@ -50,7 +50,7 @@ async function scrapeEnvato(keyword) {
         );
       }
       const listaArray = Array.from(lista).map((item) => {
-        if(i===0){
+        if(title === 'Fotos'){
           const autor = item.querySelector(".Ago_n9Jb a").innerHTML;
           const autorurl = item.querySelector(".Ago_n9Jb a").getAttribute("href");
           return [autor, url + autorurl];
@@ -66,7 +66,7 @@ async function scrapeEnvato(keyword) {
           i + 1
         }) ul > li div a[class*="_MwuC0KD"]`
       );
-      if(i === 0){
+      if(title === 'Fotos'){
          descripcionArray = Array.from(lista).map((item) => {
           const descripcion = item.querySelector(".LjIVoz0l").innerHTML;
           const descripcionurl = url + item.querySelector(".SZBxAOrq").getAttribute("href");
@@ -80,13 +80,13 @@ async function scrapeEnvato(keyword) {
         });
       }
       let imagenArray;
-      if(i == 0){
+      if(title === 'Fotos'){
         imagenArray = Array.from(lista).map((item) => {
           const src = item.querySelector(".NgtXrCQY  img").getAttribute("src");
           return [src];
         });
       }
-      else if (i== 1 || i== 5) {
+      else if (title === 'Vídeos de stock' || title=== 'Plantillas de vídeo') {
         const imagen = document.querySelectorAll(
           `#app > div.Pwa91aRM > main > div > div.GsBXsKvH > div:nth-child(${
             i + 1
