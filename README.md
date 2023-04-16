@@ -4,4 +4,4 @@
 Hola! Este es nuestro proyecto de equipo utilizando Scraping en Envato Elements. 
 <br>¡Busca tu recurso digital a sólo 1 dólar, a sólo 1 click, Voila! ✨
 <br>
-Integrantes: 📍Miriam | 📍Michel | 📍Osmarth | 📍Ray
+<strong>Integrantes: 📍Miriam | 📍Michel | 📍Osmarth | 📍Ray </strong>
