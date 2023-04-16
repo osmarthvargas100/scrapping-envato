@@ -25,17 +25,9 @@ main {
   margin-top: 20px; /* Margen superior */
 }
 
-.form-control {
-  flex: 1; /* Hacer que el campo de entrada de texto se expanda para llenar el espacio disponible */
-  border-radius: 0; /* Quitar los bordes redondeados */
-}
-
-.btn {
-  border-radius: 0; /* Quitar los bordes redondeados del botón */
-}
 
 .subirlo {
-  margin-top: 50px; /* Margen superior del contenedor del formulario */
+  margin-top: 280px; /* Margen superior del contenedor del formulario */
 }
 
 /* Estilos para el botón de envío del formulario */
