@@ -2,8 +2,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  
 }
 
+.fondo{
+  background-image: url('/img/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 main {
   flex: 1;
   overflow-y: auto;
@@ -14,7 +20,7 @@ main {
 }
 
 .img-logo {
-  width: 100px; /* Ancho de la imagen del logo */
+  width: 500px; /* Ancho de la imagen del logo */
   height: auto; /* Altura de la imagen ajustada automáticamente */
   margin-top: 20px; /* Margen superior */
 }
