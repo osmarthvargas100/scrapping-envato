@@ -61,3 +61,23 @@ main {
   background-color: #FFFFFF;
   color: #000000;
 }
+
+/*js deslizable texto en buscador*/
+#texto {
+  display: flex;
+  position: absolute;
+  left: 0;
+  color: white;
+  transform: translateX(0%);
+  font-size: 24px; 
+  }
+
+  #texto-container{
+    display: flex;
+    background-color:#547C64;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    
+  }
+
