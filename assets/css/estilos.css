@@ -27,29 +27,9 @@ main {
 
 
 .subirlo {
-  margin-top: 280px; /* Margen superior del contenedor del formulario */
+  margin-top: 250px; /* Margen superior del contenedor del formulario */
 }
 
-/* Estilos para el botón de envío del formulario */
-.btn-success {
-  background-color: #4285F4;
-  color: #fff;
-}
-
-/* Estilos para el formulario de búsqueda */
-form {
-  display: flex;
-  width: 100%;
-}
-
-/* Estilos para el campo de entrada de texto del formulario */
-.input {
-  border: none;
-  border-bottom: 2px solid #4285F4;
-  border-radius: 0;
-  outline: none;
-  box-shadow: none;
-}
 
 .footer {
   background-color: #547C64;
@@ -58,6 +38,11 @@ form {
   bottom: 0; /* Alinear el footer en la parte inferior de la ventana del navegador */
   left: 0; /* Alinear el footer a la izquierda */
   right: 0; /* Alinear el footer a la derecha */
+}
+
+.isotipo{
+  height: 50px;
+
 }
 
 .texto {
