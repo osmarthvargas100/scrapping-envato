@@ -1,8 +1,23 @@
 <%- include('head.ejs') %> 
-  <h1>hola</h1>
-  <ul>
-    <% products.forEach(function(product) { %>
-      <li><%= product.title %></li>
-    <% }); %>
-  </ul>
+<body>
+<main >
+  <h1>Resultados</h1>
+
+  <% products.forEach(function(item) { %>
+    <div>
+      <a href="<%= item.title[1] %>"><%= item.title[0] %></a> <br>
+     
+        <% for(let index = 0; index < item.containerData.authors.length; index++){ %>
+          <div>
+            <a href="<%= item.containerData.authors[index][1] %>"><%= item.containerData.authors[index][0] %></a><br>
+            
+          </div>
+          
+        <% } %>
+     
+    </div>
+  <% }); %>
+    
+  
+</main>
 <%- include('footer.ejs') %> 

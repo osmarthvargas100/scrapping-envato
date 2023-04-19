@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+.fondo{
+  background-image: url('/img/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main {
+  flex: 1;
+  overflow-y: auto;
+}
+.container {
+  max-width: 600px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+.img-logo {
+  width: 500px; /* Ancho de la imagen del logo */
+  height: auto; /* Altura de la imagen ajustada automáticamente */
+  margin-top: 20px; /* Margen superior */
+}
+
+
+.subirlo {
+  margin-top: 250px; /* Margen superior del contenedor del formulario */
+}
+
+
+.footer {
+  background-color: #547C64;
+  color: #FFFFFF;
+   /* Posición absoluta para que el footer esté siempre en la parte inferior */
+  bottom: 0; /* Alinear el footer en la parte inferior de la ventana del navegador */
+  left: 0; /* Alinear el footer a la izquierda */
+  right: 0; /* Alinear el footer a la derecha */
+}
+
+.isotipo{
+  height: 50px;
+
+}
+
+.texto {
+  color: #FFFFFF;
+}
+
+.img-fb,
+.img-twiter,
+.img-instagram {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.tamaño {
+  font-size: 12px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/*js deslizable texto en buscador*/
+#texto {
+  display: flex;
+  position: absolute;
+  left: 0;
+  color: white;
+  transform: translateX(0%);
+  font-size: 24px; 
+  }
+
+  #texto-container{
+    display: flex;
+    background-color:#547C64;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    
+  }
+
